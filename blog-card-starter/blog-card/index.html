@@ -17,6 +17,17 @@
       If you're not using Tailwind, you may delete the <script> -->
     <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily:{
+              'sans':['"Noto Sans"']
+            }
+          }
+        }
+      }
+    </script>
 
     <link rel="icon" href="img/favicon.ico" sizes="any" />
     <style>
@@ -25,10 +36,29 @@
   </head>
   <body>
     <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
-
+<!--    <h1 class="text-5xl text-center font-semibold pt-20">-->
+<!--      Hello world! Write your content here.-->
+<!--    </h1>-->
+    <div class="flex flex-col bg-gradient-to-b w-screen h-screen items-center from-gray-50 to-[#d2d6db] py-[120px]">
+      <div class="w-[340px] rounded-lg overflow-hidden">
+        <img src="img/spacejoy-YqFz7UMm8qE-unsplash.jpg" class="object-cover">
+        <div class="bg-white px-4 py-6 flex flex-col gap-3">
+          <div class="flex flex-col gap-2">
+            <div class="text-sm text-green-700 bg-green-50 rounded-full px-2 py-0.5 w-fit opacity-100 border border-solid border-green-200 font-sans">Interior</div>
+            <p class="font-sans font-semibold">Top 5 Living Room Inspirations</p>
+          </div>
+          <div class="flex flex-col gap-6">
+            <p class="font-medium text-neutral-600 font-sans">Curated vibrants colors for your living, make it pop & calm in the same time.</p>
+            <div >
+              <a class="text-indigo-700 font-medium font-sans" href="#">Read more </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="fill-indigo-700 inline">
+                <path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Interior
       Top 5 Living Room Inspirations
       Curated vibrants colors for your living, make it pop & calm in the same time.
