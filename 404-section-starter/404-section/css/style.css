@@ -7,9 +7,8 @@ body {
     sans-serif;
   min-height: 100vh;
   background-image: url("../img/abstract-background.jpg");
-  background-size: cover;
+  object-fit: cover;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
